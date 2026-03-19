@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            flex-wrap: wrap;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0072ff;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0072ff;
+            margin-top: 30px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        a.btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        a.btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-title">Programming Languages</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lang.html">Languages</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- JavaScript Tutorial Content -->
+    <div class="container">
+        <h1>JavaScript Tutorial</h1>
+        <p>Hey! Welcome to JavaScript. This is the language that makes your web pages interactive. You’ll learn
+            variables, functions, loops, and how to manipulate your webpage dynamically.</p>
+
+        <h2>1. Adding JavaScript</h2>
+        <p>You can add JS in three ways:</p>
+        <pre><code>&lt;!-- Inline --&gt;
+&lt;button onclick="alert('Hi!')"&gt;Click Me&lt;/button&gt;
+
+&lt;!-- Internal --&gt;
+&lt;script&gt;
+  alert('Hello World!');
+&lt;/script&gt;
+
+&lt;!-- External --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+
+        <h2>2. Variables</h2>
+        <p>Variables store data:</p>
+        <pre><code>// Numbers
+let age = 18;
+
+// Text
+let name = "Jitesh";
+
+// Boolean
+let isStudent = true;</code></pre>
+
+        <h2>3. Functions</h2>
+        <p>Functions are reusable blocks of code:</p>
+        <pre><code>function greet() {
+  alert("Hello!");
+}
+
+greet(); // call the function</code></pre>
+
+        <h2>4. Loops</h2>
+        <p>Loops help repeat tasks:</p>
+        <pre><code>for (let i = 1; i &lt;= 5; i++) {
+  console.log("Number: " + i);
+}</code></pre>
+
+        <h2>5. DOM Manipulation</h2>
+        <p>Change webpage content dynamically:</p>
+        <pre><code>document.getElementById("demo").innerText = "Hello JS!";</code></pre>
+        <p>Example in HTML:</p>
+        <pre><code>&lt;p id="demo"&gt;Original Text&lt;/p&gt;
+&lt;button onclick="document.getElementById('demo').innerText = 'Changed!'&gt;Change Text&lt;/button&gt;</code></pre>
+
+        <h2>6. Event Listeners</h2>
+        <pre><code>document.getElementById("btn").addEventListener("click", function() {
+  alert("Button clicked!");
+});</code></pre>
+
+        <p>Practice these examples and try changing values. JS becomes fun when you see changes live on your page!</p>
+
+        <a href="lang.html" class="btn">Back to Languages</a>
+    </div>
+
+</body>
+
+</html>

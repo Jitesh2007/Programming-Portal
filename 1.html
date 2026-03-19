@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            flex-wrap: wrap;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0072ff;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0072ff;
+            margin-top: 30px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        a.btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        a.btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-title">Programming Languages</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lang.html">Languages</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- HTML Tutorial Content -->
+    <div class="container">
+        <h1>HTML Tutorial</h1>
+        <p>Hello! I’m going to guide you step by step to learn HTML. HTML is what gives structure to your web page. You’ll learn to add headings, paragraphs, images, links, lists, and more. Let’s start!</p>
+
+        <h2>1. Basic Structure</h2>
+        <p>Every HTML page starts like this:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>2. Headings</h2>
+        <p>HTML has 6 heading levels: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. Use <code>h1</code> for main titles, <code>h2</code> for subtitles, etc.</p>
+        <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Subtitle&lt;/h2&gt;</code></pre>
+
+        <h2>3. Paragraphs</h2>
+        <p>Paragraphs are simple text blocks wrapped in <code>&lt;p&gt;</code>:</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+        <h2>4. Links</h2>
+        <p>You can link to other pages or websites with <code>&lt;a&gt;</code>:</p>
+        <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+        <h2>5. Images</h2>
+        <p>Images make your page more attractive:</p>
+        <pre><code>&lt;img src="myimage.png" alt="Description"&gt;</code></pre>
+
+        <h2>6. Lists</h2>
+        <p>You can make ordered and unordered lists:</p>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <h2>7. Forms</h2>
+        <p>Forms let users input data:</p>
+        <pre><code>&lt;form&gt;
+  &lt;label&gt;Name:&lt;/label&gt;
+  &lt;input type="text"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+        <p>Keep experimenting! HTML is easy if you practice. Add headings, paragraphs, images, and see how it looks in your browser.</p>
+
+        <a href="lang.html" class="btn">Back to Languages</a>
+    </div>
+
+</body>
+
+</html>

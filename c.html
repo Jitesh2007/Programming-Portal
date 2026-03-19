@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Language Tutorial</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            flex-wrap: wrap;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #0072ff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-title">Programming Languages</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lang.html">Languages</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- C Tutorial Content -->
+    <div class="container">
+        <h1>C Language Tutorial</h1>
+        <p>Hello! Welcome to the C programming language. C is a powerful and fast language. It is used to build operating systems, drivers, and many core programs. Let’s learn C step by step.</p>
+
+        <h2>1. First C Program</h2>
+        <p>This is a simple C program:</p>
+        <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}</code></pre>
+
+        <h2>2. Structure of C Program</h2>
+        <p>
+            <b>#include &lt;stdio.h&gt;</b> → Used for input/output functions  
+            <br>
+            <b>main()</b> → Program execution starts here  
+            <br>
+            <b>printf()</b> → Prints output on screen  
+        </p>
+
+        <h2>3. Variables</h2>
+        <p>Variables store data:</p>
+        <pre><code>int age = 18;
+float marks = 85.5;
+char grade = 'A';</code></pre>
+
+        <h2>4. Data Types</h2>
+        <pre><code>int number = 10;
+float price = 99.99;
+char letter = 'C';</code></pre>
+
+        <h2>5. Input from User</h2>
+        <pre><code>int age;
+scanf("%d", &age);
+printf("Age is %d", age);</code></pre>
+
+        <h2>6. Conditional Statements</h2>
+        <pre><code>int age = 18;
+
+if (age >= 18) {
+    printf("You can vote");
+} else {
+    printf("You cannot vote");
+}</code></pre>
+
+        <h2>7. Loops</h2>
+        <p>For loop example:</p>
+        <pre><code>for (int i = 1; i <= 5; i++) {
+    printf("%d\n", i);
+}</code></pre>
+
+        <h2>8. Functions</h2>
+        <pre><code>void greet() {
+    printf("Welcome to C");
+}
+
+int main() {
+    greet();
+    return 0;
+}</code></pre>
+
+        <h2>9. Simple Program</h2>
+        <pre><code>int a, b;
+printf("Enter two numbers:");
+scanf("%d %d", &a, &b);
+printf("Sum = %d", a + b);</code></pre>
+
+        <p>Practice writing C programs regularly. C builds strong programming logic and helps you understand how computers work internally.</p>
+
+        <a href="lang.html" class="btn">Back to Languages</a>
+    </div>
+
+</body>
+</html>

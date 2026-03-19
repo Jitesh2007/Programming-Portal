@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            flex-wrap: wrap;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0072ff;
+            text-align: center;
+        }
+
+        h2 {
+            color: #264de4;
+            margin-top: 30px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        a.btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        a.btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-title">Programming Languages</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lang.html">Languages</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- CSS Tutorial Content -->
+    <div class="container">
+        <h1>CSS Tutorial</h1>
+        <p>Hi! In this page, I’ll guide you to learn CSS step by step. CSS is what makes your web page look nice and
+            colorful. You’ll learn how to style text, arrange content, and make your site look professional.</p>
+
+        <h2>1. How to Add CSS</h2>
+        <p>We can style HTML in three ways:</p>
+        <pre><code>&lt;!-- Inline CSS --&gt;
+&lt;p style="color:red;"&gt;Hello!&lt;/p&gt;
+
+&lt;!-- Internal CSS --&gt;
+&lt;style&gt;
+  p { color: red; }
+&lt;/style&gt;
+
+&lt;!-- External CSS --&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+        <h2>2. Selecting Elements</h2>
+        <p>You can choose which elements to style using selectors:</p>
+        <pre><code>/* By tag name */
+p { color: blue; }
+
+/* By class */
+.box { padding: 10px; }
+
+/* By ID */
+#main { background: #f0f0f0; }</code></pre>
+
+        <h2>3. Colors & Fonts</h2>
+        <p>Let’s make things colorful and easy to read:</p>
+        <pre><code>body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #0072ff;
+}</code></pre>
+
+        <h2>4. The Box Model</h2>
+        <p>Every element is like a box. It has content, padding, border, and margin:</p>
+        <pre><code>div {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 20px;
+}</code></pre>
+
+        <h2>5. Layout with Flexbox</h2>
+        <p>Flexbox helps arrange elements easily:</p>
+        <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+
+        <h2>6. Make It Responsive</h2>
+        <p>We can adjust layouts for mobile screens:</p>
+        <pre><code>@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}</code></pre>
+
+        <h2>7. Styling Links</h2>
+        <pre><code>a {
+  color: #0072ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005bb5;
+}</code></pre>
+
+        <p>Keep practicing! CSS is all about trying things out and seeing how it looks. You’ll get better each day.</p>
+
+        <a href="lang.html" class="btn">Back to Languages</a>
+    </div>
+
+</body>
+
+</html>

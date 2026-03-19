@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            flex-wrap: wrap;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+            color: black;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #0072ff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        a.btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        a.btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-title">Programming Languages</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lang.html">Languages</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Python Tutorial Content -->
+    <div class="container">
+        <h1>Python Tutorial</h1>
+        <p>Hello! Welcome to Python. Python is a beginner-friendly programming language. We will learn the basics, how to work with variables, loops, functions, and write small programs.</p>
+
+        <h2>1. Printing Text</h2>
+        <pre><code>print("Hello, World!")</code></pre>
+        <p>This will show "Hello, World!" on the screen.</p>
+
+        <h2>2. Variables</h2>
+        <pre><code># Numbers
+age = 18
+
+# Text
+name = "Jitesh"
+
+# Boolean
+is_student = True</code></pre>
+
+        <h2>3. Data Types</h2>
+        <p>Python has common data types:</p>
+        <pre><code>number = 10       # int
+decimal = 3.14     # float
+text = "Hello"     # str
+flag = True        # bool</code></pre>
+
+        <h2>4. Lists</h2>
+        <p>Lists store multiple values:</p>
+        <pre><code>fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # apple</code></pre>
+
+        <h2>5. Loops</h2>
+        <p>Loops help repeat actions:</p>
+        <pre><code>for i in range(5):
+    print("Number:", i)</code></pre>
+
+        <h2>6. Functions</h2>
+        <p>Functions are reusable code blocks:</p>
+        <pre><code>def greet(name):
+    print("Hello", name)
+
+greet("Jitesh")</code></pre>
+
+        <h2>7. Conditional Statements</h2>
+        <pre><code>age = 18
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")</code></pre>
+
+        <h2>8. Simple Program</h2>
+        <p>Let’s combine concepts:</p>
+        <pre><code>name = input("Enter your name: ")
+print("Welcome,", name)
+
+for i in range(3):
+    print("This is loop number", i + 1)</code></pre>
+
+        <p>Practice these examples and try changing the values. Python becomes fun when you run the code and see results immediately!</p>
+
+        <a href="lang.html" class="btn">Back to Languages</a>
+    </div>
+
+</body>
+
+</html>

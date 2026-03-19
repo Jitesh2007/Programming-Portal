@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Languages</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        footer {
+            margin-top: 60px;
+        }
+
+        .language {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .language h2 {
+            font-size: 2rem;
+            color: #0072ff;
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 21.6px;
+        }
+
+        .html-icon {
+            background-color: #e44d26;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+
+        .icon img {
+            width: 100px;
+            height: 90px;
+        }
+
+        .css-icon {
+            background-color: #264de4;
+        }
+
+        .js-icon {
+            background-color: #f0db4f;
+            color: #333333;
+        }
+
+        .python-icon {
+            background-color: #306998;
+        }
+
+        .card h3 {
+            font-size: 21.6px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .card p {
+            font-size: 16.2px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333333;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-title">
+            Programming Languages
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lang.html">Languages</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="language">
+        <h2>Languages</h2>
+        <div class="card-container">
+
+            <!-- HTML Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/html-logo.png" alt="HTML Logo" />
+                </div>
+
+                <h3>HTML Tutorial</h3>
+                <p>Learn the basics of HTML and how to structure web pages...</p>
+                <a href="1.html" class="btn">Start Learning!</a>
+            </div>
+
+
+            <!-- CSS Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/css-logo.png" alt="CSS Logo" />
+
+                </div>
+                <h3>CSS Tutorial</h3>
+                <p>Learn styling, layouts, colors, animations, and how to make websites responsive...</p>
+                <a href="color.html" class="btn">Start Learning!</a>
+            </div>
+
+            <!-- JS Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/javascript-logo.png" alt="JavaScript Logo" />
+
+                </div>
+                <h3>JavaScript Tutorial</h3>
+                <p>Learn logic, DOM manipulation, events, and how to make web pages interactive...</p>
+                <a href="js.html" class="btn">Start Learning!</a>
+            </div>
+
+            <!-- Python Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/python-logo.png" alt="Python Logo" />
+                </div>
+                <h3>Python Tutorial</h3>
+                <p>Start coding with basics, data types, loops, functions, and real-world programming with Python...</p>
+                <a href="python.html" class="btn">Start Learning!</a>
+            </div>
+
+            <!-- C Language Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/c-logo.png" alt="C Logo" />
+                </div>
+                <h3>C Tutorial</h3>
+                <p>Learn the foundation of programming – variables, loops, functions, and basic logic using C...</p>
+                <a href="c.html" class="btn">Start Learning!</a>
+            </div>
+
+            <!-- C++ Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/cpp-logo.png" alt="C++ Logo" />
+                </div>
+                <h3>C++ Tutorial</h3>
+                <p>Learn OOP concepts, classes, objects, and powerful system programming with C++...</p>
+                <a href="cpp.html" class="btn">Start Learning!</a>
+            </div>
+
+            <!-- Java Wala Card -->
+            <div class="card">
+                <div class="icon">
+                    <img src="images/java-logo.png" alt="Java Logo" />
+                </div>
+                <h3>Java Tutorial</h3>
+                <p>Learn object-oriented programming, syntax, and real-world applications using Java...</p>
+                <a href="java.html" class="btn">Start Learning!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Programming Languages Project | All Rights Reserved</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Use</a> |
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+</body>
+
+</html>

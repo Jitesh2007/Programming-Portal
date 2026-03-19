@@ -1,0 +1,64 @@
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    height: 50px;
+  }
+
+  .nav-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+    background-color: #f0f0f0;
+    color: black;
+  }
+
+  footer {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* matches navbar */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+
+  footer a:hover {
+    color: white;
+  }
